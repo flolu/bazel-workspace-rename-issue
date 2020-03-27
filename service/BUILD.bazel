@@ -12,9 +12,6 @@ ts_library(
 
 nodejs_image(
     name = "image",
-    data = [
-        ":index",
-        "//:package.json",
-    ],
+    data = [":index"],
     entry_point = ":index.ts",
 )

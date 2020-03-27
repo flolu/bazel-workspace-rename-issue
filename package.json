@@ -8,5 +8,8 @@
     "@bazel/typescript": "^1.4.1",
     "@types/node": "^12.12.31",
     "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "build": "bazelisk build //..."
   }
 }

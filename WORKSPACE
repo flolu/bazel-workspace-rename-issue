@@ -1,5 +1,5 @@
 workspace(
-    name = "cents_ideas",
+    name = "bazel_workspace_rename_issue",
     managed_directories = {"@npm": ["node_modules"]},
 )
 
@@ -12,9 +12,7 @@ http_archive(
     urls = ["https://github.com/bazelbuild/rules_nodejs/releases/download/1.4.1/rules_nodejs-1.4.1.tar.gz"],
 )
 
-load("@build_bazel_rules_nodejs//:index.bzl", "node_repositories", "yarn_install")
-
-node_repositories(package_json = ["//:package.json"])
+load("@build_bazel_rules_nodejs//:index.bzl", "yarn_install")
 
 yarn_install(
     name = "npm",
